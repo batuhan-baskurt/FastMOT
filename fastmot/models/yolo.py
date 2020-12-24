@@ -108,3 +108,14 @@ class YOLOv4(YOLO):
     ANCHORS = [[11, 22, 24, 60, 37, 116],
                [54, 186, 69, 268, 89, 369],
                [126, 491, 194, 314, 278, 520]]
+
+class YOLOv4_APM(YOLO):
+    ENGINE_PATH = Path(__file__).parent / 'yolov4-736x416.trt'
+    MODEL_PATH = Path(__file__).parent /  'yolov4-736x416.onnx'
+    NUM_CLASSES = 4
+    INPUT_SHAPE = (3, 512, 512)
+    LAYER_FACTORS = [8, 16, 32]
+    SCALES = [1.2, 1.1, 1.05]
+    ANCHORS = [[12, 16, 19, 36, 40, 28],
+               [36, 75, 76, 55, 72, 146],
+               [142, 110, 192, 243, 459, 401]]

@@ -4,6 +4,13 @@
 """
 
 LABEL_MAP = (
+        'Car',
+        'Person',
+        'Truck',
+        'Traffic_light'
+        )
+
+'''LABEL_MAP = (
     'head',
     'person',
     'bicycle',
@@ -95,4 +102,4 @@ LABEL_MAP = (
     'teddy bear',
     'hair drier',
     'toothbrush',
-)
+)'''
